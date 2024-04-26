@@ -10,7 +10,31 @@
   <body>
     <h1 id="title">Introduction To Objects</h1>
     <script>
-      document.getElementById('title').innerText = 'Introduction To Objects';
+      // let user = {
+      //   first: "Chris",
+      //   last: "Dixon",
+      //   occupation: "web developer",
+      //   loggedIn: true,
+      //   foods: ["pizza", "mexican", "indian"],
+      // };
+      let user = [
+        {
+          first: "Chris",
+          last: "Dixon",
+          occupation: "web developer",
+          loggedIn: true,
+          foods: ["pizza", "mexican", "indian"],
+        },
+        {
+          first: "Jones",
+          last: "Dolor",
+          occupation: "mobile developer",
+          loggedIn: true,
+          foods: ["pizza", "mexican", "indian"],
+        },
+      ];
+      document.getElementById("title").innerText =
+        user[1].first + " " + user[0].last;
     </script>
   </body>
 </html>

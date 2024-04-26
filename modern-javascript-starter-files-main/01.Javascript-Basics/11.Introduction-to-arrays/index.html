@@ -1,14 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
-		<title>Introduction To Arrays & Object Types</title>
-	</head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Introduction To Arrays & Object Types</title>
+  </head>
 
-	<body>
-		<h1 id="title">Introduction To Arrays & Object Types</h1>
-		<script></script>
-	</body>
+  <body>
+    <h1 id="title">Introduction To Arrays & Object Types</h1>
+    <script>
+      let pizza = ["dough", "cheese", "sauce", "pepperoni"];
+      let hasCheese = pizza.includes("cheese");
+      document.getElementById(
+        "title"
+      ).innerHTML = `This pizza has ${pizza.length} ingredients, Do it have ${hasCheese}`;
+    </script>
+  </body>
 </html>

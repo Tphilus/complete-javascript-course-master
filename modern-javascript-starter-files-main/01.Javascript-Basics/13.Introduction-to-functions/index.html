@@ -10,8 +10,31 @@
   <body>
     <h1 id="title">Introduction To Functions</h1>
     <script>
-      let bread = ['flour', 'yeast', 'salt', 'water'];
-      let brownies = ['butter', 'chocolate', 'flour', 'eggs', 'sugar'];
+      let bread = ["flour", "yeast", "salt", "water"];
+      let brownies = ["butter", "chocolate", "flour", "eggs", "sugar"];
+
+      // function randomNumber() {
+      //   alert("hey");
+      // }
+
+      // randomNumber();
+
+      // const dogAge = 3;
+
+      // function dogToHuman(dogAge) {
+      //   const humanEquiv = dogAge * 7;
+      //   alert(humanEquiv);
+      //   return humanEquiv;
+      // }
+
+      // dogToHuman(20);
+
+      function checkAllerigies(recipe, ingredient) {
+        const hasIngredient = recipe.includes(ingredient);
+        alert(hasIngredient);
+        return hasIngredient;
+      }
+      console.log(checkAllerigies(bread, "flour"));
     </script>
   </body>
 </html>
