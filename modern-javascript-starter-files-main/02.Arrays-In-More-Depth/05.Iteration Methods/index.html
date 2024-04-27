@@ -13,7 +13,32 @@
       // admin = full access & permissions
       // author = can publish & manage their own posts
       // subscriber = can only manage their own profile
-      let roles = ['admin', 'author', 'subscriber'];
+      let users = [
+        { user: 1, role: " admin" },
+        { user: 2, role: " author" },
+        { user: 3, role: " subscriber" },
+      ];
+
+      // user.findIndex(function (user) {
+      //   return user.role === "admin";
+      // });
+
+      // user.find(function (user) {
+      //   return user.role === "admin";
+      // });
+
+      user.filter(function (user) { 
+        return user.role === "admin";
+      });
+      let roles = ["admin", "author", "subscriber"];
+      // function canPublish(role) {
+      //   return role === "adomin" || role === "author";
+      // }
+
+      // const canPublish = roles.some(function (role) {
+      //   return role === "adomin" || role === "author";
+      // });
+      // console.log(canPublish);
     </script>
   </body>
 </html>

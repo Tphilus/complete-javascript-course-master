@@ -10,9 +10,25 @@
   <body>
     <h1 id="title">Modifying Arrays</h1>
     <script>
-      let pizza = ['dough', 'sauce', 'cheese'];
-      pizza.push('pepperoni');
-      console.log(pizza);
+      // let pizza = ["dough", "sauce", "cheese"];
+      // pizza.push("pepperoni");
+      // pizza.pop();
+
+      // pizza.shift();
+      // pizza.unshift("pepperoni");
+      // pizza.splice(1, 1, "pepperoni");
+
+      let numbers = [12, 1000, 3];
+      numbers.sort(function sort(a, b) {
+        return a - b;
+      });
+
+      numbers.sort(function sort(a, b) {
+        return b - a;
+      });
+
+      // pizza.sort();
+      console.log(numbers);
     </script>
   </body>
 </html>

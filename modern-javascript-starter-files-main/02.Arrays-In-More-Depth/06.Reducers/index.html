@@ -11,6 +11,19 @@
     <h1 id="title">Reducers</h1>
     <script>
       let numbers = [72, 33, 108, 222, 6];
+
+     const result = numbers.reduceRight(total)
+     console.log(result);
+      function total (total, currentValue, index) {
+        // loop 1 - 0, 72
+        // loop 2 - 72, 33
+        // loop 3 - 105, 108
+        // loop 4 - 213, 222
+        // loop 5 - 425, 6
+        console.log(index);
+        return total + currentValue;
+      }
+     
     </script>
   </body>
 </html>

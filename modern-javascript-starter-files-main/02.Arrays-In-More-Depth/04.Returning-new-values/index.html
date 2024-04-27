@@ -10,9 +10,16 @@
   <body>
     <h1 id="title">Returning New Values</h1>
     <script>
-      let pizza = ['dough', 'sauce', 'cheese'];
-      const isIncluded = pizza.includes('dough');
-      console.log(pizza, isIncluded);
+      let pizza = ["dough", "sauce", "cheese"];
+      // const isIncluded = pizza.includes("dough");
+      // const string = pizza.join("");
+      // console.log(pizza, isIncluded);
+      // console.log(pizza, string);
+
+      // const index = pizza.lastIndexOf("dough");
+      let extras = ["pepper", "onions"];
+      const newPizza = pizza.concat(extras);
+      console.log(newPizza);
     </script>
   </body>
 </html>
