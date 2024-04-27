@@ -16,6 +16,15 @@
         { title: 'How to be a ninja', body: 'bla bla bla' },
         { title: 'How to be a ninja part 2', body: 'bla bla bla' },
       ];
+      // numbers.forEach((number, index) => console.log(`number ${index + 1}: ${number * 2}`))
+
+    // const newPosts =  posts.forEach((post) => post.title.toLocaleUpperCase())
+    // console.log(newPosts);
+      // posts.map((post) => console.log(post.title.toLocaleUpperCase()))
+
+      const newPosts =  posts.map((post) => post.title.toLocaleUpperCase()).filter((value) => value === 'HOW TO BE A NINJA PA 2')
+    console.log(newPosts);
+
     </script>
   </body>
 </html>
