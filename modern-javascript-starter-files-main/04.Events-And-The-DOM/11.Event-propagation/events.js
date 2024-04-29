@@ -1,15 +1,24 @@
-const headerImage = document.querySelector('#headerImage');
+const headerImage = document.querySelector("#headerImage");
 function changeImage() {
-  headerImage.setAttribute('src', 'burger2.jpg');
+  headerImage.setAttribute("src", "burger2.jpg");
 }
-headerImage.addEventListener('click', changeImage)
+headerImage.addEventListener("click", changeImage);
 
 function addToFavourites(e) {
-  alert(`${e.target.parentNode.children[2].innerText}`)
+  e.stopPropagation();
+  alert(`${e.target.parentNode.children[2].innerText}`);
 }
 
 const addButtons = document.querySelectorAll(".add");
-addButtons.forEach(function(button) {
-  button.addEventListener('click', addToFavourites)
-})
+addButtons.forEach(function (button) {
+  button.addEventListener("click", addToFavourites);
+});
 
+function redirect(e) {
+  alert("recipe clicked");
+}
+
+const recipeTitle = document.querySelectorAll("article");
+recipeTitle.forEach(function (title) {
+  title.addEventListener("click", redirect, { capture: true });
+});

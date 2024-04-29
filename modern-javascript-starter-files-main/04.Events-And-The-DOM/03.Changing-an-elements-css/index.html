@@ -11,16 +11,16 @@
         color: rgb(89, 88, 88);
       }
 
-      header {
+      /* header {
         display: flex;
         justify-content: space-between;
         align-items: center;
         padding: 0 10px;
-      }
+      } */
 
-      .green {
+      /* .green {
         color: rgb(40, 141, 40);
-      }
+      } */
 
       .nav-inline {
         display: flex;
@@ -45,7 +45,7 @@
   <body>
     <header>
       <h1 id="site-title">
-        <span class="change-title blue red">Meaty</span> Burgers
+        <span style="color: red;" class="change-title blue red">Meaty</span> Burgers
       </h1>
       <nav>
         <ul class="nav-inline">
@@ -59,11 +59,20 @@
     <script>
       const el = document.querySelector('.change-title');
       el.innerHTML = '<em>No Meat</em>';
-      el.setAttribute('class', 'green');
+      // el.setAttribute('class', 'green');
+
+      el.style.color = "rgb(40, 141, 40)";
+
 
       const image = document.querySelector('img');
       image.setAttribute('src', 'burger.jpg');
       image.setAttribute('alt', 'burger image');
+
+      const header = document.querySelector('header')
+      header.style.display = 'flex';
+      header.style.justifyContent ='space-between';
+      header.style.alignItems = 'center';
+      header.style.padding = '0 10px';
     </script>
   </body>
 </html>

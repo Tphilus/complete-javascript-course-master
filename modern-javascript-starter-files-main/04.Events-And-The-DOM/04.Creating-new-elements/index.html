@@ -105,19 +105,57 @@
     </section>
 
     <script>
+
+      // document.write('<h1>heyyyyyyy </h1>');
+      // setTimeout(() => document.write('where did my content go?' ), 3000)
       // ========= SECTION HEADING =========
+      const sectionHeader = document.createElement('h3')
+      const headingText = document.createTextNode('Helping the planet, one bite at a time...')
+      sectionHeader.appendChild(headingText)      
 
       // ========= IMAGE =========
+      const imageElement = document.createElement('img');
+      imageElement.setAttribute('src', 'burger.png');
+      imageElement.setAttribute('alt', 'burger image');
 
       // ========= INFO TEXT =========
+      const infoSectionElement = document.createElement('p')
+      const infoSectionText = document.createTextNode('lorem lorem ipsum dolor sit amet, consectet')
+      infoSectionElement.appendChild(infoSectionText)
+
 
       // ========= BUTTON =========
+      const buttonElement = document.createElement('button');
+      const buttonText = document.createTextNode('BUY ONLINE');
+      buttonElement.appendChild(buttonText);
 
       // ========= WRAPPERS =========
+      const sectionWrapper = document.createElement('section');
+      const contentWrapper = document.createElement('div');
+      const imageDivElement = document.createElement('div');
+      const textDivWrapper = document.createElement('div');
 
-      // ========= PUTTING IT ALL TOGETHER =========
+
+        // ========= PUTTING IT ALL TOGETHER =========
+        textDivWrapper.appendChild(infoSectionElement);
+        textDivWrapper.appendChild(buttonElement);
+
+        imageDivElement.appendChild(imageElement);
+
+        contentWrapper.appendChild(imageDivElement);
+        contentWrapper.appendChild(textDivWrapper);
+
+        sectionWrapper.appendChild(sectionHeader);
+        sectionWrapper.appendChild(contentWrapper);
 
       // ========= ADDING CLASSES =========
+      contentWrapper.setAttribute('class', 'content');
+      imageDivElement.setAttribute('class', 'image_section');
+      textDivWrapper.setAttribute('class', 'info_section');
+
+    </script>
+
+    
     </script>
   </body>
 </html>

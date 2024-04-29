@@ -44,7 +44,7 @@
 
 	<body>
 		<header>
-			<h1 id="site-title">Meaty Burgers</h1>
+			<h1 id="site-title"> <span class="change-title">Meaty</span> Burgers</h1>
 			<nav>
 				<ul class="nav-inline">
 					<li class="nav-item">our burgers</li>
@@ -53,6 +53,15 @@
 			</nav>
 		</header>
 		<img src="burger.jpg" />
-		<script></script>
+		<script>
+			const el = document.querySelector('.change-title');
+			el.innerText = 'No Meat'
+			el.setAttribute('class', 'green');
+			el.removeAttribute('id');
+
+			const image = document.querySelector('img');
+			image.setAttribute('src', 'burger.jpg');
+			image.setAttribute('alt', 'burger image');
+		</script>
 	</body>
 </html>

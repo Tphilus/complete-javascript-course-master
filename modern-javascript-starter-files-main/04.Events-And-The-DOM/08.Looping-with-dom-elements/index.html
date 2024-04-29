@@ -106,6 +106,24 @@
       );
 
       // ========= LOOPING =========
+      const listItems = document.querySelectorAll('li');
+      // // listItems[0].classList.add('inline')
+      // for (const item of listItems) {
+      //   item.classList.add('inline');
+      // }
+
+      // listItems.forEach(function (item) {
+      //   item.classList.add('inline');
+      // })
+
+      const links = ['our burgers', 'history',]
+      for(const link of links) {
+        const listElement = document.createElement('li');
+      const listText = document.createTextNode(link);
+      listElement.appendChild(listText);
+      listElement.classList.add('nav-item');
+      document.querySelector('ul').appendChild(listElement);
+      }
     </script>
   </body>
 </html>
