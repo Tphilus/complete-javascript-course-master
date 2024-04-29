@@ -10,10 +10,11 @@
   <body>
     <h1 id="title">Immediately Invoked Function Expressions</h1>
     <script>
-      function hey() {
-        alert('HEY');
-      }
-      hey();
+      const lang = (function hey() {
+        var language = "Javascript";
+        return language;
+        // alert("HEY");
+      })();
     </script>
   </body>
 </html>

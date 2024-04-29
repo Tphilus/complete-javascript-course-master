@@ -10,13 +10,24 @@
   <body>
     <h1 id="title">Function Expressions</h1>
     <script>
-      let bread = ['flour', 'yeast', 'salt', 'water'];
-      let brownies = ['butter', 'chocolate', 'flour', 'eggs', 'sugar'];
+      let bread = ["flour", "yeast", "salt", "water"];
+      let brownies = ["butter", "chocolate", "flour", "eggs", "sugar"];
 
-      function checkAllergies(recipe, ingredient) {
-        const hasIngredient = recipe.includes(ingredient);
-        return hasIngredient;
+      // function checkAllergies(recipe, ingredient) {
+      //   const hasIngredient = recipe.includes(ingredient);
+      //   return hasIngredient;
+      // }
+
+      // const checkAllergies = function (recipe, ingredient) {
+      //   const hasIngredient = recipe.includes(ingredient);
+      //   return hasIngredient;
+      // }
+
+      function toUpperCase(value) {
+        return value.toUpperCase();
       }
+      console.log(toUpperCase("hello"));
+      bread.map(toUpperCase);
     </script>
   </body>
 </html>
